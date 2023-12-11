@@ -1,0 +1,26 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+
+.btn1 {
+    background-color:#610479;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 7px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn2 {
+    background-color:rgb(255, 253, 253);
+    color: rgb(121, 138, 116);
+    padding: 10px 30px;
+    border-color: #610479;
+    
+    border-radius: 7px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
