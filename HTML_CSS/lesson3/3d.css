@@ -12,6 +12,8 @@ body {
     border: none;
     border-radius: 7px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 .btn2 {
@@ -22,5 +24,11 @@ body {
     
     border-radius: 7px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+.btn2:hover {
+    background-color: rgb(3, 128, 20); 
+    color: white; 
 }
 

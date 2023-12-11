@@ -12,6 +12,8 @@ body {
     border: none;
     border-radius: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
 
 .p1{
@@ -23,5 +25,17 @@ body {
     padding: 10px 30px;    
     border-radius: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
 }
-
+.btn1:hover {
+    background-color: rgb(163, 100, 18); 
+    color: black; 
+}
+.btn2:hover {
+    background-color: rgb(240, 236, 35); 
+    color: black; 
+}
+a:hover{
+    color: rgb(255, 0, 0); 
+}
