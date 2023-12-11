@@ -130,7 +130,7 @@
 *the execute permission allows the file to be executed as a program or script*
 
 
-*Without execute permission on a directory, a user cannot enter the directory or perform any operations inside it, even if they have read permission on the directory, Allows accessing and traversing the directory. *
+*Without execute permission on a directory, a user cannot enter the directory or perform any operations inside it, even if they have read permission on the directory, Allows accessing and traversing the directory.*
 
 
 
