@@ -42,5 +42,6 @@
 ![Screenshot from 2023-12-13 14-37-52](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/a40dcfed-91d0-46f1-8ed1-641e23cb617a)
 
 # 10. Copy /etc/passwd to your home directory, use the commands diff and cmp, and Edit in the file you copied, and then use these commands again, and check the output.
+
 # 11. Create a symbolic link of /etc/passwd in /boot.
 # 12. Create a hard link of /etc/passwd in /boot. Could you? Why?
