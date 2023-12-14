@@ -56,5 +56,7 @@
 **Bonus**
 # 1. Get the sum of accounts id’s that has the same group.
 
+![Screenshot from 2023-12-14 07-29-51](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/4d92a9a3-e4db-4d34-a11f-62884b481522)
 
 # 2. Make the following report: User-Group Report
+![Screenshot from 2023-12-14 07-39-22](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/5a6528c4-5678-4334-9079-35ff0b2316d7)
