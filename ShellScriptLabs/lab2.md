@@ -4,7 +4,13 @@
 
 # 2. Create a script called s1 that calls another script s2 where:
   **a. In s1 there is a variable called x, it's value 5**
+  
   **b. Try to print the value of x in s2 by two different ways.**
+  
+  ![Screenshot from 2023-12-15 00-55-30](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/fe75f9bd-b5fd-499a-b043-8ea1625331a6)
+  
+![Screenshot from 2023-12-15 00-58-22](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/8a091c32-ee16-4b7e-b550-bfe58202556b)
+
 # 3. Create a script called mycp where:
   **a. It copies a file to another**
   **b. It copies multiple files to a directory.**
