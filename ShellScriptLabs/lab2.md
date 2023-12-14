@@ -1,4 +1,7 @@
 # 1. Create a script that asks for user name then send a greeting to him.
+
+ ![Screenshot from 2023-12-15 00-45-40](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/aa93dfc0-1d5f-451a-8496-6faaeae6dd4e)
+
 # 2. Create a script called s1 that calls another script s2 where:
   **a. In s1 there is a variable called x, it's value 5**
   **b. Try to print the value of x in s2 by two different ways.**
