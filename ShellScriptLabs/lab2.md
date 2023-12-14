@@ -14,6 +14,11 @@
 # 3. Create a script called mycp where:
   **a. It copies a file to another**
   **b. It copies multiple files to a directory.**
+  
+  ![Screenshot from 2023-12-15 01-04-01](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/2a3e122e-3b31-4b0a-8fe9-4fc18d920ac9)
+  
+![Screenshot from 2023-12-15 01-09-08](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/a6cfaa2b-5278-4b41-a819-bc9863504047)
+
 # 4. Create a script called mycd where:
   **a. It changed directory to the user home directory, if it is called without arguments.**
   **b. Otherwise, it change directory to the given directory.**
