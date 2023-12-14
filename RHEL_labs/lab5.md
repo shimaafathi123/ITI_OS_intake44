@@ -1,4 +1,6 @@
-![Screenshot from 2023-12-13 14-15-54](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/7099ed52-4181-47eb-95c7-b9b7067ed8d6)# 1. Compress a file by compress, gzip, zip commands and decompress it again. State the differences between compress and gzip commands.
+
+
+# 1. Compress a file by compress, gzip, zip commands and decompress it again. State the differences between compress and gzip commands.
 
 ![Screenshot from 2023-12-13 13-51-25](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/70df07b9-7080-4906-a583-e0057de790c2)
 ![Screenshot from 2023-12-13 13-52-03](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/22de235c-6158-47c4-b662-fc6b801597ab)
@@ -24,6 +26,12 @@
 # 5. Starting from /etc, find files owned by root user.
 ![Screenshot from 2023-12-13 14-14-40](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/63b93292-a4af-4d12-b72b-2c93c76e162b)
 ![Screenshot from 2023-12-13 14-14-37](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/ccb3a235-1910-475d-beea-26d735e7cbe5) home directory.
+
+# 6. Find all directories in your home directory.
+
+![Screenshot from 2023-12-13 14-15-54](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/7099ed52-4181-47eb-95c7-b9b7067ed8d6)
+
+
 # 7. Write a command to search for all files on the system that, its name is “.profile”.
 
 ![Screenshot from 2023-12-13 14-15-54](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/32014086-4573-4a60-87bd-bf8bb4166b52)
