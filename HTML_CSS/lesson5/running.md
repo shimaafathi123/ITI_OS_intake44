@@ -1,14 +1,20 @@
-# 2a
-![image](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/c0d06fdf-c52e-4ca8-9b79-d4428a8cf699)
-# 2b
-![image](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/29dd1f28-24f6-4a44-baf8-5b367e74bd01)
-# 2c
-![image](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/194dc072-42c3-4cc4-845b-2d961e1d2640)
-# 2d
-![image](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/07bf3d3c-0508-421b-a0f1-1195d15521b0)
-# 2e
-![image](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/3c64c449-275c-42d8-a5a4-d06f3d666f9f)
-# 2f
-![image](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/557861c0-00a0-484a-b28d-3a049b6315f0)
+# 5a
+![5a](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/9fd41c6f-8b15-4a0f-92a8-5094c0635e64)
 
+# 5b
+![5b](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/66f82a88-1339-4caa-a0ee-5e5481f59e18)
 
+# 5c
+![5c](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/08467818-75ec-47dc-8c4c-706ae6209680)
+
+# 5d
+![5d](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/d97ddefe-f101-4591-9091-0355a779ab0e)
+
+# 5e
+![5e](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/b431dcf7-2d85-424a-aed3-c6f5784da10a)
+
+# 5f
+![5f](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/e5d3cac1-885d-4399-a900-49c0074f9c05)
+
+# 5g
+![5g](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/cb844505-3ad7-4422-af41-14c5be00ff68)
