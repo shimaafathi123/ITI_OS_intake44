@@ -1,0 +1,16 @@
+*{
+    font-family: Verdana;
+}
+h3 {
+    color: rgb(160, 156, 156);
+}
+.p {
+    font-size: 15px;
+}
+.start {
+    background-color: rgb(56, 212, 56);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid;
+}

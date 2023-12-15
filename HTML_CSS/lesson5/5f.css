@@ -1,0 +1,23 @@
+* {
+    font-family: Arial;
+}
+.price {
+    font-size: 30px;
+    font-weight: bold;
+}
+.currency {
+    font-size: 21px;
+    color :gray;
+}
+.inc {
+    color: green;
+    font-size: 15px;
+}
+.aft {
+    color: gray;
+    font-size: 15px;
+}
+.loss {
+    color: red;
+    font-size: 15px;
+}

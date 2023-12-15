@@ -1,0 +1,29 @@
+*{
+    font-family: Arial;
+    font-weight: bold;
+}
+.box {
+    text-align: center;
+    margin:auto;
+}
+#new {
+    color: orange;
+    font-size: 14px;
+}
+#macbook {
+    font-size: 22px;
+}
+#supercharged {
+    font-size: 60px;
+}
+#price {
+    font-weight: normal;
+    font-size: 18px;
+}
+.buy {
+    padding: 5px 10px;
+    background-color: rgb(9, 141, 194);
+    color: white;
+    border-radius: 50px;
+    border:none;
+}

@@ -1,0 +1,12 @@
+*{
+    font-family: Arial;
+    font-weight: bold;
+}
+.box {
+    text-align: center;
+    margin:auto;
+}
+.box > a {
+    color:rgb(0, 162, 255);
+    text-decoration: none;
+}

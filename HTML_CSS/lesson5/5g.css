@@ -1,0 +1,14 @@
+* {
+    font-family: Arial;
+    font-size: 18px;
+}
+.uname {
+    font-weight: bold;
+}
+.emil {
+    color: gray;
+}
+#name {
+    color:aqua;
+    text-decoration: none;
+}
