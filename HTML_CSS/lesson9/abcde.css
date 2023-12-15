@@ -1,0 +1,50 @@
+.cbox {
+    border: 1px solid black;
+    padding: 20px;
+    width:400px;
+}
+
+.music {
+    background-color: rgb(39, 35, 35);
+    padding: 20px;
+    width: 500px;
+}
+.music > h1{
+    color:white;
+}
+.music > p {
+    color:rgb(90, 75, 75);
+}
+.e9box {
+    vertical-align: middle;
+    margin: auto;
+    margin-top: 100px;
+    width:400px;
+    box-shadow: 0px 0px 30px -5px black;
+    border-radius: 5px;
+}
+.ebox > * {
+    display:inline-block;
+}
+#ephoto {
+    float:left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+
+}
+#estatus {
+    width:200px;
+    border:none;
+    padding: 15px;
+    font-size: 18px;
+}
+#etweet {
+    background-color: blue;
+    color:white;
+    border-radius: 50px;
+    padding: 15px 25px;
+    font-weight: bold;
+    font-size: 16px;
+    border:0px solid;
+}
