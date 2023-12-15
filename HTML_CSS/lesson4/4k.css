@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.green-button {
+    padding: 15px 30px; 
+    margin: 10px; 
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    font-size: 16px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.green-button:active {
+    transform: scale(0.95); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); 
+}

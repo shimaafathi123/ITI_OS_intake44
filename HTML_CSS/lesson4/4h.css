@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.pagination-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.back-btn {
+    background-color: grey;
+    color: white;
+}
+
+
+
+.next-btn {
+    background-color: grey;
+    color: white;
+}

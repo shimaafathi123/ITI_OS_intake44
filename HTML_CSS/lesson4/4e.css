@@ -1,0 +1,36 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+
+.btn1 {
+    background-color: #895eff;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn2 {
+    background-color: rgb(255, 253, 253);
+    color: rgb(121, 138, 116);
+    padding: 10px 30px;
+    border-color: #895eff;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn1:hover,
+.btn2:hover {
+    background-color: rgb(5, 114, 165);
+    color: black;
+}
