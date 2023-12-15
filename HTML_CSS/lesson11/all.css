@@ -1,0 +1,81 @@
+.g{
+    display: grid;
+    grid-template-columns: 200px 75px;
+  }
+  .g2 {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+      }
+  .c1 {
+    background-color: lightblue;
+  }
+  
+  .c2 {
+    background-color: lightpink;
+  }
+  .c3 {
+    background-color: lightblue;
+  }
+  
+  .c4 {
+    background-color: lightpink;
+  }
+  .c5{
+    background-color: lightblue;
+  }
+  .g3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+  
+  .c6,.c7,.c8,.c9,.c10,.c11,.c12,.c13{
+    background-color: lightpink;
+  }
+  p {
+    font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    column-gap: 20px;
+  } 
+  .d1{
+    width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+  }
+  
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+  
+  .p1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-bottom: 4px;
+  }
+  
+  .p2 {
+    color: gray;
+    margin-left: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .bttn1 {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    padding:10px 20px ;
+  }
