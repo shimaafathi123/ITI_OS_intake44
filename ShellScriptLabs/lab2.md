@@ -33,3 +33,5 @@
   **b. Otherwise, it lists the given directory.**
 ![Screenshot from 2023-12-18 00-52-31](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/97c9ba29-2dc5-42dc-ac4a-2c32bf39dfbd)
 ![Screenshot from 2023-12-18 00-52-43](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/4ab5967f-f4f9-41fa-a086-55ba0db98ef0)
+# Qustion 6:
+![image](https://github.com/shimaafathi123/ITI_OS_intake44/assets/93112282/474c7a84-91d1-462b-9d66-4ab3d7c93fde)
