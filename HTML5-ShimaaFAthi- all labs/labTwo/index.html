@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Maker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        canvas {
+            border: 1px solid #ccc;
+        }
+        input[type="color"] {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Pixel Art Maker</h2>
+    <canvas id="pixelCanvas" width="400" height="400"></canvas>
+    <input type="color" id="colorPicker" value="#000000">
+
+    <script>
+        var canvas = document.getElementById('pixelCanvas');
+        var ctx = canvas.getContext('2d');
+
+        var colorPicker = document.getElementById('colorPicker');
+
+        var pixelSize = 20;
+
+        var numRows = canvas.height / pixelSize;
+        var numCols = canvas.width / pixelSize;
+
+        var pixelGrid = [];
+
+        for (var i = 0; i < numRows; i++) {
+            pixelGrid[i] = [];
+            for (var j = 0; j < numCols; j++) {
+                pixelGrid[i][j] = '#ffffff'; 
+            }
+        }
+
+        drawPixelGrid();
+
+        canvas.addEventListener('click', function(event) {
+            var mouseX = event.clientX - canvas.offsetLeft;
+            var mouseY = event.clientY - canvas.offsetTop;
+
+            var row = Math.floor(mouseY / pixelSize);
+            var col = Math.floor(mouseX / pixelSize);
+
+            pixelGrid[row][col] = colorPicker.value;
+
+            drawPixelGrid();
+        });
+
+        function drawPixelGrid() {
+            for (var i = 0; i < numRows; i++) {
+                for (var j = 0; j < numCols; j++) {
+                    ctx.fillStyle = pixelGrid[i][j];
+                    ctx.fillRect(j * pixelSize, i * pixelSize, pixelSize, pixelSize);
+                    ctx.strokeStyle = '#ccc';
+                    ctx.strokeRect(j * pixelSize, i * pixelSize, pixelSize, pixelSize);
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITI Logo</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #container {
+            width: 100%;
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <canvas id="myCanvas" width="270px" height="430px"></canvas>
+    </div>
+    <script >
+        const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+
+
+ctx.beginPath();
+ctx.arc(50, 85, 15, 0, 2 * Math.PI);
+ctx.fillStyle = "#bd1c1c";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(50, 125, 15, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(50, 305, 15, 0, 2 * Math.PI);
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(35, 125, 30, 180);
+ctx.fill();
+
+ctx.beginPath();
+ctx.rect(35, 125, 200, 30);
+ctx.rect(120, 125, 30, 220);
+ctx.fill();
+ctx.beginPath();
+ctx.rect(205, 180, 30, 180);
+ctx.fill();
+ctx.beginPath();
+ctx.arc(220, 180, 15, 0, 2 * Math.PI);
+ctx.fill();
+ctx.beginPath();
+ctx.arc(220, 360, 15, 0, 2 * Math.PI);
+ctx.fill();
+ctx.beginPath();
+ctx.arc(220, 140, 15, 0, 2 * Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+    </script>
+
+</body>
+</html>

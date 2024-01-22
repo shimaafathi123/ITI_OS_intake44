@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Color Range</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input[type="range"] {
+            width: 200px;
+        }
+        #textPreview {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="redRange">Red:</label>
+    <input type="range" id="redRange" name="redRange" min="0" max="255" value="0">
+
+    <label for="greenRange">Green:</label>
+    <input type="range" id="greenRange" name="greenRange" min="0" max="255" value="0">
+
+    <label for="blueRange">Blue:</label>
+    <input type="range" id="blueRange" name="blueRange" min="0" max="255" value="0">
+
+    <div id="textPreview">This is a sample text.</div>
+
+    <script>
+        // Function to update the text color based on slider values
+        function updateTextColor() {
+            var redValue = document.getElementById('redRange').value;
+            var greenValue = document.getElementById('greenRange').value;
+            var blueValue = document.getElementById('blueRange').value;
+
+            var textPreview = document.getElementById('textPreview');
+            textPreview.style.color = 'rgb(' + redValue + ',' + greenValue + ',' + blueValue + ')';
+        }
+
+        document.getElementById('redRange').addEventListener('input', function() {
+            updateTextColor();
+        });
+
+        document.getElementById('greenRange').addEventListener('input', function() {
+            updateTextColor();
+        });
+
+        document.getElementById('blueRange').addEventListener('input', function() {
+            updateTextColor();
+        });
+
+        updateTextColor();
+    </script>
+
+</body>
+</html>

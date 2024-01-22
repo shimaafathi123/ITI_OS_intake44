@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Media Player with Playlist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        audio {
+            width: 100%;
+            max-width: 400px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        select {
+            margin-top: 10px;
+            font-size: 16px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Custom Media Player with Playlist</h2>
+
+    <audio id="myAudio" controls>
+        <source id="audioSource" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <select id="songSelector">
+        <option value="song1.mp3">Song 1</option>
+        <option value="song2.mp3">Song 2</option>
+        <option value="song3.mp3">Song 3</option>
+    </select>
+
+    <button id="playPauseBtn">Play</button>
+    <button id="stopBtn">Stop</button>
+    <button id="muteBtn">Mute</button>
+
+    <script>
+        var audio = document.getElementById('myAudio');
+        var playPauseBtn = document.getElementById('playPauseBtn');
+        var stopBtn = document.getElementById('stopBtn');
+        var muteBtn = document.getElementById('muteBtn');
+        var songSelector = document.getElementById('songSelector');
+        var audioSource = document.getElementById('audioSource');
+
+        playPauseBtn.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play();
+                playPauseBtn.innerHTML = 'Pause';
+            } else {
+                audio.pause();
+                playPauseBtn.innerHTML = 'Play';
+            }
+        });
+
+        stopBtn.addEventListener('click', function() {
+            audio.pause();
+            audio.currentTime = 0;
+            playPauseBtn.innerHTML = 'Play';
+        });
+
+        muteBtn.addEventListener('click', function() {
+            if (audio.muted) {
+                audio.muted = false;
+                muteBtn.innerHTML = 'Mute';
+            } else {
+                audio.muted = true;
+                muteBtn.innerHTML = 'Unmute';
+            }
+        });
+
+        songSelector.addEventListener('change', function() {
+            var selectedSong = songSelector.value;
+            audioSource.src = selectedSong;
+            audio.load();
+            playPauseBtn.innerHTML = 'Play';
+        });
+    </script>
+
+</body>
+</html>
