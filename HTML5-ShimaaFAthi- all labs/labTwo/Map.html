@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        #buttonContainer {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        button {
+            color: white;
+            background-color: #015e09;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        #locationInfo {
+            margin-top: 20px;
+            width: 300px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #0b7c24;
+            color: white;
+        }
+
+        #map {
+            height: 400px;
+            width: 80%;
+            margin-top: 20px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+    <button id="getMap">Map</button>
+    <button id="getLocationInfo">Location Info</button>
+</div>
+    <table id="locationInfo"></table>
+    <div id="map"></div>
+
+
+    <script>
+        let map;
+
+        let btnMap = document.getElementById("getMap");
+        btnMap.addEventListener("click", function () {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(success, error);
+            } else {
+                alert("Update your browser");
+            }
+        });
+
+        var latitude, longitude;
+
+        function success(obj) {
+            latitude = obj.coords.latitude;
+            longitude = obj.coords.longitude;
+            console.log(latitude);
+            console.log(longitude);+
+            initMap(latitude, longitude);
+        }
+
+        function error(e) {
+            switch (e.code) {
+                case 1:
+                    console.log("Error: user denied");
+                    break;
+            }
+        }
+
+        function initMap(x, y) {
+            map = L.map('map').setView([x, y], 15);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([x, y]).addTo(map);
+        }
+
+        document.getElementById("getLocationInfo").addEventListener("click", function () {
+            if (latitude && longitude) {
+                showLocationInfo(latitude, longitude);
+            } else {
+                alert("Location not yet obtained. Click 'Map' first.");
+            }
+        });
+
+        function showLocationInfo(lat, lon) {
+            const locationInfo = document.getElementById("locationInfo");
+
+            const htmlContent =
+                `
+                <tr>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Current Time</th>
+                </tr>
+                <tr>
+                    <td>${lat}</td>
+                    <td>${lon}</td>
+                    <td>${new Date().toLocaleTimeString()}</td>
+                </tr>
+            `;
+
+            locationInfo.innerHTML = htmlContent;
+        }
+    </script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+
+</html>

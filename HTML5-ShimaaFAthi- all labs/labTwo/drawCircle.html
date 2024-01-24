@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circles Canvas</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        canvas {
+            border: 2px solid #000;
+        }
+
+        #controls {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="color"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="controls">
+        <input type="color" id="color-input" value="#0000ff">
+        <button id="color-btn">Set Color</button>
+    </div>
+    <canvas width="800" height="500"></canvas>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const canvas = document.querySelector('canvas');
+            const ctx = canvas.getContext('2d');
+            const colorInput = document.getElementById("color-input");
+            const colorBtn = document.getElementById("color-btn");
+
+            colorBtn.addEventListener("click", () => {
+                ctx.strokeStyle = colorInput.value;
+
+                setInterval(() => {
+                    ctx.beginPath();
+                    let x = Math.floor(Math.random() * canvas.width);
+                    let y = Math.floor(Math.random() * canvas.height);
+                    ctx.arc(x, y, 30, 0, Math.PI * 2);
+                    ctx.stroke();
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>

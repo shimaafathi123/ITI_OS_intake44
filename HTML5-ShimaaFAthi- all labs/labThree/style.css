@@ -1,0 +1,75 @@
+body {
+  background-color: #d5e28a !important; 
+}
+
+.one {
+  width: 100%;
+  text-align: center;
+  margin: 10px;
+}
+
+.theone {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.theone button {
+  width: 18%;
+  background-color: blue;
+  color: white;
+  margin-right: 1%;
+}
+
+.two {
+  position: relative;
+}
+
+.ball,
+.bicycle {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  right: 0px;
+}
+
+.ball {
+  animation: moving 6s infinite linear;
+}
+
+.bicycle {
+  animation: moving2 14s infinite linear;
+  transform-origin: center center;
+}
+
+@keyframes moving {
+  0%, 100% {
+    left: 0%;
+  }
+  50% {
+    left: 80%;
+  }
+}
+
+@keyframes moving2 {
+  0%, 100% {
+    left: 0%;
+    transform: rotateY(0deg);
+    transform-origin: left center;
+  }
+  25% {
+    left: 45%;
+    transform: rotateY(90deg);
+    transform-origin: left center;
+  }
+  50% {
+    left: 90%;
+    transform: rotateY(180deg);
+    transform-origin: left center;
+  }
+  75% {
+    left: 45%;
+    transform: rotateY(270deg);
+    transform-origin: left center;
+  }
+}
