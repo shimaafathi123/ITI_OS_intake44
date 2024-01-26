@@ -1,0 +1,40 @@
+.user-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #884747;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .user-card-img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .user-card-info {
+    flex: 1;
+  }
+  
+  .user-card-username {
+    margin-bottom: 5px;
+  }
+  
+  .user-card-detail {
+    margin-bottom: 3px;
+  }
+  
+  .status-indicator {
+    font-size: 12px;
+    margin-right: 5px;
+  }
+  
+  .verified {
+    color: green;
+  }
+  
+  .unverified {
+    color: red;
+  }
+  

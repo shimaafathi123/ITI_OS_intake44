@@ -1,0 +1,13 @@
+<!-- todo-wrapper.component.html -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-todo-form (addTask)="onAddTask($event)"></app-todo-form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-todo-list [tasks]="tasks" (deleteTask)="onDeleteTask($event)"></app-todo-list>
+    </div>
+  </div>
+</div>

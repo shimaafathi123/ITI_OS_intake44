@@ -1,0 +1,11 @@
+<div class="user-card">
+  <img [src]="user.image" alt="Profile Picture" class="user-card-img">
+  <div class="user-card-info">
+    <h5 class="user-card-username">{{ user.username }}</h5>
+    <p class="user-card-detail"><strong>Email:</strong> {{ user.email }}</p>
+    <p class="user-card-detail"><strong>Phone:</strong> {{ user.phone }}</p>
+    <p class="user-card-detail"><strong>Verified:</strong>
+      <i class="fa fa-circle" [ngClass]="{ 'text-success': user.is_verified, 'text-danger': !user.is_verified }"></i>
+    </p>
+  </div>
+</div>

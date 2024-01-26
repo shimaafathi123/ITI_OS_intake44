@@ -1,0 +1,11 @@
+<!-- todo-list.component.html -->
+<ul class="list-group">
+  <li *ngFor="let task of tasks; let i = index" class="list-group-item">
+    <div>
+      {{ task }}
+      <div>
+      <button class="btn btn-danger btn-sm float-right" (click)="onDelete(i)">Delete</button>
+    </div>
+    </div>
+  </li>
+</ul>

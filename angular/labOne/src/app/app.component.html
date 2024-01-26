@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..........." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Your Portfolio</title>
+  <style>
+    /* Add your custom styles here */
+    body {
+      background-color: #f2f2f2 !important;
+      color: #333;
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    .jumbotron {
+      background-color: #343a40 !important;
+      color: #ffffff !important;
+      padding: 4rem;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(253, 252, 252, 0.1);
+    }
+
+    .jumbotron h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .jumbotron .lead {
+      font-size: 1.8rem;
+      margin-top: 1rem;
+      color: #e2abab !important;
+    }
+
+    section {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+    }
+
+    button {
+      background-color: #e2abab;
+      color: #ffffff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    section.skills, section.projects {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .skill, .project {
+      flex: 0 0 calc(33.333% - 20px);
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .project {
+      flex: 0 0 calc(50% - 20px);
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .project h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .project a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #007bff;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .project a:hover {
+      background-color: #0056b3;
+    }
+
+    .footer {
+      background-color: #343a40;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contact, .social-links {
+      flex: 1;
+      margin-right: 2rem;
+    }
+
+    .contact h2, .social-links h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact p {
+      font-size: 1rem;
+    }
+
+    .social-icon {
+      font-size: 1.5rem;
+      margin-right: 1rem;
+    }
+
+    .social-icon a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-icon a:hover {
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <div class="jumbotron text-center mt-5">
+    <h1>Shimaa Fathi</h1>
+    <p class="lead">Software Engineer</p>
+  </div>
+<hr>
+  <section class="my-5">
+    <h2>Bio</h2>
+    <p>Computer Science and Artificial Intelligence Graduate | Web Developer</p>
+  </section>
+<hr>
+  <section class="my-5">
+    <h2>About Me</h2>
+    <h3>Education</h3>
+    <p><strong>Benha University</strong> - Bachelor's Degree in Computer Science 2023</p>
+    <h3>Experiences</h3>
+    <p><strong>ITI</strong> - Open Source </p>
+    <button class="btn btn-primary mt-3"> <a href="" download="">Download CV</a> </button>
+  </section>
+<hr>
+  <section class="my-5 skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <p>HTML</p>
+      <div class="progress-bar" style="width: 80%;"></div>
+    </div>
+    <div class="skill">
+      <p>CSS</p>
+      <div class="progress-bar" style="width: 70%;"></div>
+    </div>
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="progress-bar" style="width: 90%;"></div>
+    </div>
+    <!-- Add more skills as needed -->
+  </section>
+<hr>
+  <section class="my-5 projects">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <img src="https://qph.cf2.quoracdn.net/main-qimg-39dda340ffdeaacaaf015116d47e4aeb-lq" alt="Project 1 Image">
+      <h3>ProjectOne: DBMS In BASH</h3>
+      <p>Using Bash shell script, create a database management system</p>
+      <a href="#" target="_blank">View Project</a>
+    </div>
+    <div class="project">
+      <img src="data:image/jpeg;base64,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" alt="Project 2 Image">
+      <h3>Snake Game</h3>
+      <p>Creating snake game in c++ with simple colors and style.</p>
+      <a href="#" target="_blank">View Project</a>
+    </div>
+    <!-- Add more projects as needed -->
+  </section>
+<hr>
+  <footer class="footer">
+    <div class="container">
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: </p>
+      </div>
+
+      <div class="social-links">
+        <h2>Follow Us</h2>
+        <div class="social-icon">
+          <a href="#" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="#" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="social-icon">
+          <a href="#" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

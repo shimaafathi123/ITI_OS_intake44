@@ -1,0 +1,29 @@
+.completed {
+  text-decoration: line-through;
+}
+
+.list-group {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #7e2c2c;
+  border-radius: 4px;
+}
+
+.list-group-item:hover {
+  background-color: #f5844f;
+}
+
+.list-group-item button {
+  margin-left: 10px;
+}
+
+.list-group-item.completed {
+  text-decoration: line-through;
+}
