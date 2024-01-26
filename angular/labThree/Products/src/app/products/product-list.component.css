@@ -1,0 +1,42 @@
+th  {
+  color: #337AB7;
+}
+/* Add these styles to your global styles or specific component styles */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-card-header {
+  background-color: #501381;
+  color: #fff;
+  padding: 10px;
+}
+
+.product-card-body {
+  padding: 15px;
+}
+
+.product-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ccc;
+}
