@@ -1,0 +1,28 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 11rem;
+    margin-bottom: 2rem;
+}
+
+
+.product-img {
+    
+    height: 50%;
+}
+
+.item .product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Buttons {
+    display: flex;
+    align-items: center;
+}
+
+.Buttons h4 {
+    margin: 0px 1rem;
+}

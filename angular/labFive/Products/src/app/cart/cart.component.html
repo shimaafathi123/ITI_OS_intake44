@@ -1,0 +1,14 @@
+
+<div class="container-fluid">
+    <div class="items">
+        @for (item of cart; track item.id) {
+            <div class="item">
+                <app-cart-item [item]="item"></app-cart-item>
+            </div>
+        }
+    </div>
+    <h1>Hello, You are in cart page</h1>
+    <h2>Get ready for pay</h2>
+    <div class="total-price">
+    </div>
+</div>

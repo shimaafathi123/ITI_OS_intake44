@@ -1,0 +1,22 @@
+
+.container-fluid {
+    background-color: rebeccapurple;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: rgb(255, 255, 255); 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.items {
+    margin-top: 8vh;
+    width: 80%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+}
+
+.total-price {
+    margin-top: 20px; 
+}
