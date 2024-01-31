@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CartItem } from '../API/cart-item';
+import { CartItem } from '../interfaces/cart-item';
 import { CartItemComponent } from '../cart-item/cart-item.component';
 import { CartService } from '../services/cart.service';
 import { CurrencyPipe } from '@angular/common';

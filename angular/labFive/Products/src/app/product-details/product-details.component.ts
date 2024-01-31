@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Product } from '../API/product';
+import { Product } from '../interfaces/product';
 import { CurrencyPipe, PercentPipe } from '@angular/common';
 import { RatingComponent } from '../rating/rating.component';
 import { Router } from '@angular/router';

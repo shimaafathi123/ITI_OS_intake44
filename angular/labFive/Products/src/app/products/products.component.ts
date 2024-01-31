@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { Product } from '../API/product';
+import { Product } from '../interfaces/product';
 import { ProductCardComponent } from '../product-card/product-card.component';
 import { ProductsService } from '../services/products.service';
-import { ProductApiResponse } from '../API/product-api-response';
+import { ProductApiResponse } from '../interfaces/product-api-response';
 
 @Component({
   selector: 'app-products',
