@@ -1,3 +1,4 @@
+
 import { Component, Input } from '@angular/core';
 import { Product } from '../interfaces/product';
 import { CurrencyPipe } from '@angular/common';
