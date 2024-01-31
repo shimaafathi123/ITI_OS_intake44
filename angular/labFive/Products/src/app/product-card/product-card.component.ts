@@ -3,14 +3,13 @@ import { Component, Input } from '@angular/core';
 import { Product } from '../interfaces/product';
 import { CurrencyPipe } from '@angular/common';
 import { Router } from '@angular/router';
-import { RatingComponent } from '../rating/rating.component';
 import { CartService } from '../services/cart.service';
 
 
 @Component({
   selector: 'app-product-card',
   standalone: true,
-  imports: [CurrencyPipe, RatingComponent],
+  imports: [CurrencyPipe],
   templateUrl: './product-card.component.html',
   styleUrl: './product-card.component.css'
 })

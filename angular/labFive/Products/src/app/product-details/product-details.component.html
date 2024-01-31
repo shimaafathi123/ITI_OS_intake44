@@ -1,7 +1,6 @@
 <div class="container">
     <img [src]="product.thumbnail" alt="">
     <h1>{{product.title}}</h1>
-    <app-rating [rating]="product.rating || 0"></app-rating>
     <h2>Price : {{product.price | currency}}</h2>
     <div class="controls">
         <button class="button-17" (click)="addToCart()">Add to Cart</button>
