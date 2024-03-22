@@ -1,0 +1,16 @@
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-detail .product-image,
+  .product-detail .product-info {
+    flex: 1 0 50%;
+    padding: 1rem;
+  }
+  
+  .product-detail-image {
+    flex: 1 0 33%;
+    object-fit: cover;
+  }
+  
