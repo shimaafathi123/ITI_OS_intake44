@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProductDetail from './components/ProductDeltail'
 import ProductList from './components/ProductList'
 import NotFound from './components/NotFound'
-
+import RegisterPage from './components/RegisterPage'
 
 function App() {
   return (
@@ -16,6 +16,8 @@ function App() {
           <Route path="/" element={<ProductList />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/register" element={<RegisterPage />} />
+
         </Routes>
       </div>
     </Router>
