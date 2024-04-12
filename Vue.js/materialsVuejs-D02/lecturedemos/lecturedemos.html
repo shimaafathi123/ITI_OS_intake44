@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./vueversion3.js"></script>
+    <style>
+        [v-cloak]{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="mainapp" v-cloak>
+        <!-- <p>Message : {{getMessage()}}</p> -->
+        <!-- <p @click="getMessage($event,'nasr')">Click Me</p> -->
+        <!-- <p>Message Value : {{showMessage}}</p>
+        <h4>Counter : {{counter}}</h4>
+        <button @click="counter++">Increase</button>
+        <br/>
+        <button @click="showMessage='n'">Change Message</button> -->
+
+          <h2>Nasr Message: {{message}}</h2>
+        <button @click="message='Test Message'">Change message</button>
+    </div>
+    <script>
+        const app=Vue.createApp({
+            beforeCreate(){
+                alert('From before create ');
+            
+            },
+            created(){
+                alert('From created'  + this.message);
+                // call api : result assign it to member data 
+            },
+            beforeMount(){
+                alert('From before mount');
+            },
+            mounted(){
+                alert('From mounted');
+            },
+            beforeUpdate(){
+                alert('From before update');
+            },
+            updated(){
+                alert('From updated');
+            },
+            beforeUnmount(){
+                alert('From before destry');
+            },
+            unmounted(){
+                alert('From destroued');
+            },
+            data:()=>({
+                 message:"Hello World",
+                // counter:10,
+            }),
+            // template:`
+            // <h4>Test : {{message}}</h4>
+            // `,
+            methods:{
+               
+                // getMessage(e,_data){
+                //     alert('From Get Message function');
+                //     //return this.message.toUpperCase();
+                //    // console.log(this.message.toUpperCase());
+                // //    console.log(_data.target.innerText);
+                // console.log(_data,e);
+
+                // }
+            },
+            computed:{
+                // showMessage(){
+                //     alert('From show message');
+                //     return this.message.toUpperCase();
+                // }
+                // message = 'hello' // set : setter
+                // {{message}} : //get : getter
+                showMessage:{
+                    set(_v){
+                        // you can write validation rules here 
+                        alert('from set');
+                        if(_v.length>=3)
+                        this.message=_v;
+                    },
+                    get(){
+                        alert('from get');
+                        return this.message.toUpperCase();
+                    }
+                }
+            },
+        });//end of createApp
+        app.mount("#mainapp");    
+    //    setTimeout(()=>{
+        
+    //    },4000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "id": "100",
+      "name": "ahmed ghoraba",
+      "city": "tanta"
+    },
+    {
+      "id": "200",
+      "name": "ahmed",
+      "city": "alex"
+    },
+    {
+      "id": "300",
+      "name": "ibraheem",
+      "city": "cairo"
+    },
+    {
+      "id": "400",
+      "name": "ahmed",
+      "city": "tanta"
+    },
+    {
+      "id": "500",
+      "name": "mohamed",
+      "city": "mansoura"
+    },
+    {
+      "id": "600",
+      "name": "ahmed",
+      "city": "tanta"
+    },
+    {
+      "id": "700",
+      "name": "nasr kassem",
+      "city": "mansoura"
+    }
+  ]
+}
