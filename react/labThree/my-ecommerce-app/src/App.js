@@ -9,9 +9,7 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <header>
-          <h1>My E-commerce App</h1>
-        </header>
+
         <Routes>
           <Route path="/" element={<ProductList />} />
           <Route path="/products/:productId" element={<ProductDetail />} />
