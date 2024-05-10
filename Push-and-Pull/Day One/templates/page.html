@@ -32,16 +32,13 @@
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
                     var response = JSON.parse(xhr.responseText);
-                    // Update content with new data
                     document.getElementById('content').innerText = response.new_content;
-                    // Continue long polling
                     getContent();
                 }
             };
             xhr.send();
         }
     
-        // Start long polling on page load
         window.onload = function() {
             getContent();
         };
