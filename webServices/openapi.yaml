@@ -1,0 +1,188 @@
+openapi: 3.0.1
+info:
+  title: Blog and Author Management API
+  description: An API for managing authors and their blog posts, including operations for creation, retrieval, updating, and deletion.
+  version: 2.0.0
+servers:
+  - url: http://api.myblogsite.com
+    description: Production server
+paths:
+  /authors:
+    get:
+      summary: Retrieve all authors
+      responses:
+        '200':
+          description: A list of all authors
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Author'
+    post:
+      summary: Register a new author
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewAuthor'
+      responses:
+        '201':
+          description: Author successfully registered
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Author'
+  /authors/{authorId}:
+    get:
+      summary: Retrieve author by ID
+      parameters:
+        - name: authorId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Author details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Author'
+        '404':
+          description: Author not found
+  /authors/{authorId}/blogs:
+    get:
+      summary: Retrieve blogs by author
+      parameters:
+        - name: authorId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: List of blogs by the author
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Blog'
+        '404':
+          description: Author not found
+    post:
+      summary: Create a new blog for a specific author
+      parameters:
+        - name: authorId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewBlog'
+      responses:
+        '201':
+          description: Blog successfully created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Blog'
+  /blogs/{blogId}:
+    delete:
+      summary: Delete a blog
+      parameters:
+        - name: blogId
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Blog successfully deleted
+        '404':
+          description: Blog not found
+    patch:
+      summary: Partially update a blog
+      parameters:
+        - name: blogId
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateBlog'
+      responses:
+        '200':
+          description: Blog successfully updated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Blog'
+        '404':
+          description: Blog not found
+components:
+  schemas:
+    Author:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        bio:
+          type: string
+    NewAuthor:
+      type: object
+      required:
+        - name
+        - bio
+      properties:
+        name:
+          type: string
+        bio:
+          type: string
+    Blog:
+      type: object
+      properties:
+        id:
+          type: integer
+        authorId:
+          type: integer
+        title:
+          type: string
+        content:
+          type: string
+    NewBlog:
+      type: object
+      required:
+        - title
+        - content
+      properties:
+        title:
+          type: string
+        content:
+          type: string
+    UpdateBlog:
+      type: object
+      properties:
+        title:
+          type: string
+        content:
+          type: string
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+security:
+  - bearerAuth: []
